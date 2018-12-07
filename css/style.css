@@ -1,0 +1,32 @@
+body{
+	background-color: #A0B4BF;
+}
+h1{
+	color: #fff;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+}
+p{
+	text-align: justify;
+}
+.custom_header{
+	background-color: #668C5E;
+}
+.btn_custom{
+	color: #fff;
+	text-transform: capitalize;
+}
+.form_exm{
+	background-color: rgba(255,255,255,.3);
+	border-radius: 5px;
+	padding: 30px 20px;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.custom-jumb{
+	background-color: #AFD1D0;
+}
+.custom_list{
+	background-color: #fff;
+	text-align: justify;
+}

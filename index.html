@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS links-->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+
+    <title>bootstrap components</title>
+  </head>
+  <body>
+    <!-- multiple target collapse-->
+    <section class="collapse_example">
+      <h1>#example of collapse- multiple targets</h1>
+      <div class="container">
+         <p>
+          <a class="btn btn-info btn-lg" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">First Element</a>
+          <button class="btn btn-success btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Second Element</button>
+          <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Both Elements</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus est nihil voluptas.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem nisi, corporis.
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <!-- multiple target collapse -->
+  <section class="accordion_example">
+    <h1># accordion example</h1>
+    <div class="container">
+      <div class="row">
+        <div class="accordion" id="accordionexample">
+          <!-- collapsible item one -->
+          <div class="card">
+            <!-- card header -->
+            <div class="card-header custom_header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn_custom" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  collapsegroupitem1
+                </button>
+              </h5>
+            </div>
+            <!-- card header -->
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionexample">
+            <!-- card body -->
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem itaque quaerat laboriosam impedit nostrum sint adipisci, rerum libero voluptatum voluptate earum consequatur ducimus deleniti sapiente rem quis eum dolore sequi? Excepturi error ex nam repellendus, unde laboriosam dolor ducimus sit beatae neque nostrum autem ipsum, quos quod est, iure sed. Saepe qui optio aspernatur tempore aperiam illo consequuntur aliquam voluptatem possimus quia laboriosam vel, suscipit!</p>
+              </div>
+              <!-- card body -->
+            </div>
+          </div>
+          <!-- collapsible item one -->
+          <!-- collapsible item two -->
+          <div class="card">
+            <!-- card header -->
+            <div class="card-header custom_header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed btn_custom" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  collapsegroupitem2
+                </button>
+              </h5>
+            </div>
+            <!-- card header -->
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionexample">
+            <!-- card body -->
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, perspiciatis. Harum placeat fugit minus suscipit aperiam amet accusantium, repellat ad iure aliquam similique dolore, natus at. Vel, distinctio corporis dolore veritatis! Deserunt praesentium mollitia vero, nesciunt. Facere inventore itaque, quas atque perspiciatis voluptatem, consequuntur dignissimos quaerat minus. Sapiente tempora mollitia temporibus assumenda nam, qui veniam atque adipisci voluptates ipsa dolorum illum eveniet. Architecto, possimus ducimus!</p>
+              </div>
+            <!-- card body -->
+            </div>
+          </div>
+          <!-- collapsible item two -->
+          <!-- collapsible item three -->
+          <div class="card">
+            <!-- card header -->
+            <div class="card-header custom_header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed btn_custom" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  collapsegroupitem3
+                </button>
+              </h5>
+            </div>
+            <!-- card header -->
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionexample">
+             <!-- card body --> 
+             <div class="card-body">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis consequatur ab dicta animi ipsam necessitatibus, esse non omnis id illo. Maiores repudiandae illo inventore, dolor, eaque natus doloribus facilis aperiam, culpa enim laborum dolorem atque nobis consequatur in asperiores. Dolor, cum. Saepe inventore delectus, illo nostrum ipsa molestiae odio ullam, vel libero! Eum corporis natus molestias assumenda, aliquam et a, qui magnam dolor repellat harum!</p>
+             </div>
+             <!-- card body -->
+            </div>
+            
+          </div>
+          <!-- collapsible item three -->
+        </div>
+      </div>
+     </div>
+    </section>
+    <section class="dropdown_example">
+      <h1># example of dropdowns</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"> 
+          <!-- single button -->         
+            <div class="btn-group">
+             <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</button>
+             <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"> Home</a>
+              <a class="dropdown-item" href="#">Menu</a>
+              <a class="dropdown-item" href="#">Services</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Contact</a>
+            </div>
+          </div>
+           <!-- single button -->
+           <!-- split button -->
+           <div class="btn-group">
+             <button type="button" class="btn btn-success btn-lg">Home</button>
+             <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span class="sr-only">Toggle Dropdown</span>
+             </button>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Home</a>
+               <a class="dropdown-item" href="#">Menu</a>
+               <a class="dropdown-item" href="#">Services</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Contact</a>
+             </div>
+           </div>
+           <!-- split button -->
+           <!-- dropup button -->
+           <div class="btn-group dropup">
+           <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</button>
+            <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Home</a>
+               <a class="dropdown-item" href="#">Menu</a>
+               <a class="dropdown-item" href="#">Services</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Contact</a>
+             </div>
+            </div>
+           <!-- dropup button -->
+           <!-- dropright split button -->
+           <div class="btn-group dropright">
+             <button type="button" class="btn btn-warning btn-lg">Home</button>
+             <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span class="sr-only">Toggle Dropright</span>
+             </button>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Home</a>
+               <a class="dropdown-item" href="#">Menu</a>
+               <a class="dropdown-item" href="#">Services</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Contact</a>
+             </div>
+           </div>
+           <!-- dropright split button -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form_example">
+      <h1># example of forms</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="form_exm">
+              <!-- example of submit form -->
+              <div class="form_exm">
+                <div class="form-group">
+                  <label for="exampleInputEmail">Email Address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter Your Email Address">
+                  </div>
+                 <div class="form-group">
+                  <label for="exampleInputPassword">Password</label>
+                  <input type="Password" class="form-control" id="exampleInputPassword" placeholder="Enter Password">
+                 </div>
+                <div class="form-group form-check">
+                   <input type="checkbox" class="form-check-input" id="exampleCheck">
+                   <label type="form-check-label" for="exampleCheck">Logged In</label>
+                 </div>
+                 <button type="submit" class="btn btn-info">Submit</button>
+                </div>
+              <!-- example of submit form -->
+              <!-- example select -->
+              <div class="form-group">
+                <label for="exampleSelect">Example Select</label>
+                <select class="form-control" id="exampleSelect">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <!-- example select -->
+              <!-- example multiple select -->
+              <div class="form-group">
+                <label for="exampleSelectMultiple">Example Select Multiple</label>
+                <select multiple class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <!-- example multiple select -->
+              <!-- example of file browser -->
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+              </div>
+              <!-- example of file browser -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="input_group">
+      <h1># button addson</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+           <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-primary" type="button" id="button-addon">Button</button>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </section>
+        <!-- jumbotron example -->
+        <section class="jumbotron_example">
+          <h1># jumbotron</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="jumbotron custom-jumb">
+                  <h1 class="display-5">Lorem ipsum.!</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nesciunt quidem inventore similique possimus est quas, placeat vel at nihil.</p>
+                  <hr class="my-4">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo consectetur, repellat.</p>
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </div>
+             </div>
+           </div>
+        </section>
+        <!-- jumbotron example -->
+        <!-- javaScript behavior -->
+        <section class="listgroup_exm">
+          <h1>#list group example -javaScript behavior</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                  <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                  <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                 </div>
+                </div>
+                <div class="col-8 custom_list">
+                  <div class="tab-content" id="nav-tabContent">
+                     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quia, ea neque adipisci expedita autem nesciunt eum perspiciatis ipsum accusamus consectetur molestias, voluptates voluptas quod culpa sit quo, ut ad incidunt! Facilis quod atque eligendi autem. Consectetur mollitia perferendis, vero natus quidem, laborum cupiditate? Rem enim adipisci officiis excepturi nobis quia dolorum rerum laboriosam natus totam dolorem eligendi distinctio fugiat facilis corporis autem odit, eum culpa, velit eos suscipit non!</div>
+                     <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eaque nobis enim vero sunt libero voluptas ut, laudantium quasi perferendis atque esse dolorem, obcaecati quod alias culpa accusantium unde non magni placeat voluptatum. Eos aliquid dolorum delectus unde odio vero hic, nihil velit voluptates officiis? Deserunt voluptate saepe, recusandae nihil labore voluptatibus illum expedita commodi doloremque sapiente neque reprehenderit nostrum ex, nulla maxime! Deserunt maxime quia, totam! Eius culpa, nihil.</div>
+                     <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum maiores doloribus quas suscipit alias amet deserunt sapiente sunt reiciendis temporibus error molestias ullam repellat molestiae odio magnam earum porro culpa, autem adipisci. Commodi earum sit quisquam provident quas, fugiat esse facilis molestiae hic voluptas fugit delectus aut odio, sint non reprehenderit exercitationem nemo dicta eos sapiente dignissimos! Modi sint vitae non illum reiciendis architecto similique exercitationem, maxime, atque voluptatem nostrum.</div>
+                     <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quibusdam unde dolorum sint quos ex expedita, voluptatibus nemo ipsum esse perferendis sapiente nesciunt vel fugiat ratione veritatis consequuntur asperiores est libero. Ipsum, veniam? Natus facere minima sequi consectetur nihil blanditiis hic odit nemo praesentium necessitatibus. Adipisci, recusandae! Et fuga nihil recusandae vitae at earum suscipit, iste reiciendis consequuntur, modi, quae iure deserunt temporibus labore natus, hic possimus consequatur ea odit.</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- javaScript behavior -->
+        <!-- modal example -->
+        <section class="modal_exm">
+          <h1>example of modals</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <!-- button modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch demo modal
+                  </button>
+                  <!-- button modal -->
+                  <!--  modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor sit.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint saepe, debitis expedita.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  modal -->
+                <!-- Scrolling long content -->
+                <!-- button modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                    long content modal
+                  </button>
+                  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">long content modal</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, vero ex nobis voluptatem suscipit quas! Adipisci accusantium explicabo deleniti, enim, aspernatur, voluptates ratione ipsa, optio doloribus veritatis provident accusamus amet laudantium ad neque modi esse ducimus numquam pariatur dignissimos at. Veniam recusandae dolore necessitatibus nobis maiores quia error iusto ratione placeat, dicta, voluptatum, reiciendis nam! Similique dignissimos nostrum quae facere modi voluptatum nobis totam earum. Saepe similique modi nostrum quia distinctio consectetur animi id repellat at porro. Molestias aliquam obcaecati error impedit, vitae quia rerum sequi, assumenda ab dicta quod magni officiis, ut maiores expedita facilis at eum? Ullam beatae officia magnam nam ut pariatur porro temporibus, totam suscipit aut. Harum esse molestias cumque provident debitis distinctio reprehenderit itaque laboriosam.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Scrolling long content -->
+              </div>
+            </div>
+          </div>
+        </section>  
+        <!-- modal example -->
+        <!--  navigation bar example -->
+        <section class="nav_exm">
+          <h1># navbar example </h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+       <!--  navigation bar example -->
+       <!--  pagination example -->
+        <section class="pagination_exm">
+          <h1># pagination example</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  pagination example -->
+
+    <!-- jQuery -->
+        <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+    });
+    </script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
